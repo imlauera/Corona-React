@@ -1,0 +1,22 @@
+#country{
+	color: black;
+}
+#totaldeaths{
+	color: red;
+}
+#country { color:  white;}
+#newconfirmed { color: blue; }
+#totalconfirmed{
+	color: #626262;
+}
+#newdeaths
+{
+	color: darkred;
+}
+#newrecovered{
+	color: green;
+}
+#totalrecovered{
+	color: darkgreen;
+}
+

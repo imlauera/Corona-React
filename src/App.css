@@ -1,3 +1,5 @@
+body { background-color: #111; color: white;}
+
 .App {
   text-align: center;
 }
@@ -27,6 +29,35 @@
 .App-link {
   color: #61dafb;
 }
+
+#stats {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  background-color: #000;
+  width: 100%;
+  margin: auto;
+}
+#stats tr th { background-color: #111;}
+#stats td, #stats th {
+  border: 0px solid #ddd;
+  padding: 5px;
+}
+#stats td:hover {
+  transition: all 0.3s;
+  border: 2px solid orange;
+  padding: 5px;
+}
+
+#stats tr:hover {background-color: #222;}
+
+#stats th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #222;
+  color: white;
+}
+#title { color: grey; }
 
 @keyframes App-logo-spin {
   from {
