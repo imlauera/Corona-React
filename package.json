@@ -1,10 +1,10 @@
 {
   "name": "corona-react",
+  "description": "corona stats",
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "10.16.2",
-    "npm": "6.14.4"
+    "node": "10.16.2"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
