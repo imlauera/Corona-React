@@ -1,0 +1,9 @@
+7import React from "react";
+
+function Country(props) {
+  return (
+    <div className="country"><p>{props.newconfirmed},props.totalconfirmed},{props.newdeaths},{props.totaldeaths},{props.newrecovered},{props.totalrecoverd}</p></span></div>
+  );
+}
+
+export default Country;
