@@ -32,7 +32,7 @@ class App extends Component {
   }
   // Putting that data to use
   render() {
-    const { isLoading, posts } = this.state;
+    const { isLoading } = this.state;
     return (
       <React.Fragment>
         <body>

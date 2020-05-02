@@ -5,7 +5,7 @@ class CoronaStats extends Component {
 	render(){
 		return (
            this.props.countries.map(c => {
-              const { Country, CountryCode, NewConfirmed, TotalConfirmed, NewDeaths, TotalDeaths, NewRecovered, TotalRecovered} = c;
+              const { Country, NewConfirmed, TotalConfirmed, NewDeaths, TotalDeaths, NewRecovered, TotalRecovered} = c;
               return (
 					<tbody>
 					<tr>
