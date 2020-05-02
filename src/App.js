@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './components/CoronaStats.css'
 import CoronaStats from "./components/CoronaStats";
-
-import axios from "axios";
+import axios from 'axios';
 
 class App extends Component {
   state = {
@@ -34,29 +33,27 @@ class App extends Component {
   render() {
     const { isLoading  } = this.state;
     return (
-      <React.Fragment>
-        <body>
-            <center><h3 id="title">Corona Stats</h3></center>
-            <div>
-              {!isLoading ? (
-                <table id="stats">
-				<tr>
-					<th>Country</th>
-					<th>New Confirmed</th>
-					<th>Total Confirmed</th>
-					<th>New Deaths</th>
-					<th>Total Deaths</th>
-					<th>New Recovered</th>
-					<th>Total recovered</th>
-				</tr>
-                <CoronaStats countries = {this.state.countries} />
-                </table>
-              ) : (
-                <center><p>Loading...</p></center>
-              )}
-            </div>
-        </body>
-      </React.Fragment>
+    <body>
+        <center><h3 id="title">Corona Stats</h3></center>
+        <div>
+          {!isLoading ? (
+            <table id="stats">
+            <tr>
+                <th>Country</th>
+                <th>New Confirmed</th>
+                <th>Total Confirmed</th>
+                <th>New Deaths</th>
+                <th>Total Deaths</th>
+                <th>New Recovered</th>
+                <th>Total recovered</th>
+            </tr>
+            <CoronaStats countries = {this.state.countries} />
+            </table>
+          ) : (
+            <center><p>Loading...</p></center>
+          )}
+        </div>
+    </body>
     );
   }
 }
