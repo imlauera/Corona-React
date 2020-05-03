@@ -55,7 +55,7 @@ class App extends Component {
   render() {
     //const { isLoading  } = this.state;
     return (
-    // todo: change body label
+    // todo: change this body tag
     <body>
         <center><h3 id="title">Corona Stats</h3></center>
         <div>
