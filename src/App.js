@@ -29,14 +29,9 @@ class App extends Component {
   componentDidMount() {
     this.getPosts();
   }
-  // Putting that data to use
-  render() {
-    const { isLoading  } = this.state;
-    return (
-    <body>
-        <center><h3 id="title">Corona Stats</h3></center>
-        <div>
-          {!isLoading ? (
+  renderTable(){
+    if(!this.state.isLoading){
+        return (
             <table id="stats">
             <tr>
                 <th>Country</th>
@@ -49,9 +44,22 @@ class App extends Component {
             </tr>
             <CoronaStats countries = {this.state.countries} />
             </table>
-          ) : (
-            <center><p>Loading...</p></center>
-          )}
+        );
+        } else {
+            return (
+                <center><h4>Loading...</h4></center>
+            );
+        }
+    }
+
+  render() {
+    //const { isLoading  } = this.state;
+    return (
+    // todo: change body label
+    <body>
+        <center><h3 id="title">Corona Stats</h3></center>
+        <div>
+            {this.renderTable()}
         </div>
     </body>
     );
