@@ -53,11 +53,14 @@ class App extends Component {
     }
 
   render() {
-    //const { isLoading  } = this.state;
     return (
-    // todo: change this body tag
     <body>
-        <center><h3 id="title">Corona Stats</h3></center>
+        <center>
+            <h3 id="title">Corona Stats</h3>
+            <div id="warning"><small>This is a simple demo, this is data
+            is being taken from api.covid19api.com</small></div>
+        </center>
+
         <div>
             {this.renderTable()}
         </div>

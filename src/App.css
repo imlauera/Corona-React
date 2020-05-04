@@ -27,7 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-
+#warning { color: #F9A602; margin-bottom: 10px; }
 #stats {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
