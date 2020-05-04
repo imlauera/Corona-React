@@ -11,7 +11,7 @@ class App extends Component {
     errors: null
   };
   // Now we're going to make a request for data using axios
-  getPosts() {
+  getData() {
     axios
       // This is where the data is hosted
       .get("https://api.covid19api.com/summary")
@@ -27,7 +27,8 @@ class App extends Component {
   }
   // Let's our app know we're ready to render the data
   componentDidMount() {
-    this.getPosts();
+    document.title = "Corona Stats"
+    this.getData();
   }
   renderTable(){
     if(!this.state.isLoading){
