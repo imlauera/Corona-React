@@ -1,4 +1,4 @@
-## demo [acá](https://coronastats1234.herokuapp.com).
+## [here](https://coronastats1234.herokuapp.com) is the demo.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
