@@ -1,6 +1,6 @@
 #totaldeaths{ color: red; }
 #newdeaths{	color: darkred; }
-#country { color:  white;}
+#country { color:  #f9f9f9;}
 #newconfirmed { color: grey; font-weight: bold; }
 #totalconfirmed{ color: #626262; }
 #newrecovered{ color: green; }

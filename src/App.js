@@ -3,6 +3,7 @@ import './App.css';
 import './components/CoronaStats.css'
 import CoronaStats from "./components/CoronaStats";
 import axios from 'axios';
+import {Table} from 'react-bootstrap';
 
 class App extends Component {
   state = {
@@ -33,18 +34,22 @@ class App extends Component {
   renderTable(){
     if(!this.state.isLoading){
         return (
-            <table id="stats">
-            <tr>
-                <th>Country</th>
-                <th>New Confirmed</th>
-                <th>Total Confirmed</th>
-                <th>New Deaths</th>
-                <th>Total Deaths</th>
-                <th>New Recovered</th>
-                <th>Total recovered</th>
-            </tr>
-            <CoronaStats countries = {this.state.countries} />
-            </table>
+            <div id="box">
+                <table id="stats">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>New Confirmed</th>
+                            <th>Total Confirmed</th>
+                            <th>New Deaths</th>
+                            <th>Total Deaths</th>
+                            <th>New Recovered</th>
+                            <th>Total recovered</th>
+                        </tr>
+                    </thead>
+                    <CoronaStats countries = {this.state.countries} />
+                </table>
+            </div>
         );
         } else {
             return (
@@ -58,7 +63,7 @@ class App extends Component {
     <body>
         <center>
             <h3 id="title">Corona Stats</h3>
-            <div id="warning"><small>This is a simple demo, this is data
+            <div id="warning"><small>This is a simple demo, the data
             is being taken from api.covid19api.com</small></div>
         </center>
 
