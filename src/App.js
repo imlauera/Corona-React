@@ -3,7 +3,6 @@ import './App.css';
 import './components/CoronaStats.css'
 import CoronaStats from "./components/CoronaStats";
 import axios from 'axios';
-import {Table} from 'react-bootstrap';
 
 class App extends Component {
   state = {

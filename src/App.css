@@ -55,7 +55,7 @@ table tbody{
   padding: 5px;
 }
 #stats td:hover {
-  border: 1px solid #DAA520;
+  border: 1px solid grey;
 }
 #stats tr:hover {background-color: #222;}
 
