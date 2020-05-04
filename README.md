@@ -1,6 +1,6 @@
 ## [here](https://coronastats1234.herokuapp.com) is the demo.
 
-[![demo](main.png)]
+![demo](main.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
